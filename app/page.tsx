@@ -3,8 +3,8 @@ import React from 'react';
 import { Wrapper } from 'enkanetwork.js';
 
 export default async function Home() {
-  const playerUID = 812098487;
-  
+  const playerUID = String(process.env.NEXT_PUBLIC_USERUID);
+
   // サーバーコンポーネントでデータを取得
   const options = {
     userAgent: 'my-app/v1.0.0',
